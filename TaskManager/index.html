@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale 1.0">
+    <title>TASK MANAGER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Task Manager</h1>
+        <section class="taskForm">
+            <label for="taskName">Nome attività:</label>
+            <input type="text" id="taskName" placeholder="inserisci attività">
+            <label for="taskStatus">Stato:</label>
+            <select id="taskStatus">     
+              <option value="da fare">Da fare</option>
+              <option value="in corso">In corso</option>
+              <option value="completata">Completata</option>
+            </select> 
+
+            <button id="addTaskBtn">Aggiungi attività</button>
+
+        </section>
+        <section class="filters">
+            <label for="searchInput">Cerca attività:</label>
+            <input type="text" id="searchInput" placeholder="Cerca per nome">
+      
+            <label for="filterStatus">Filtra per stato:</label>
+            <select id="filterStatus">
+              <option value="tutte">Tutte</option>
+              <option value="da fare">Da fare</option>
+              <option value="in corso">In corso</option>
+              <option value="completata">Completata</option>
+            </select>
+          </section>
+        </div>
+
+        <ul id="taskList">
+        
+        </ul>
+      </div>
+ 
+
+    </main>
+    <script src="app.js"></script>
+</body>
+
+</html>

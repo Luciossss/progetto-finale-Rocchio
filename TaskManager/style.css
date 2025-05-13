@@ -1,0 +1,67 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #646363;
+    margin: 10;
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: auto;
+    background-color: #50d0f7;
+    padding: 20px;
+    border: 2px solid black;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #0c0c0c;
+  }
+  
+  .task-form,
+  .filters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-bottom: 5px;
+    flex-direction: column;
+  }
+  
+  .task-form input,
+  .task-form select,
+  .filters input,
+  .filters select {
+    flex: 1;
+    padding: 1px;
+  }
+  
+  button {
+   float: right;
+    padding: 5px 5px;
+    background-color: #09f320;
+    border: none;
+    color: white;
+    border-radius: 6px;
+  }
+  
+
+  
+  .task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #f1ebeb;
+    margin-bottom: 8px;
+    border-radius: 6px;
+  }
+  
+  .task span {
+    flex: 1;
+  }
+  
+  .task.completed {
+    background-color: #e0ffe0;
+    text-decoration: line-through;
+    color: rgb(8, 8, 8);
+  }
