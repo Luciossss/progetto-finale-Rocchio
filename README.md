@@ -1,28 +1,28 @@
 # progetto-finale-Rocchio
 
-# 📝esercizio 1: Task Manager
+# esercizio 1: Task Manager
 
 Creare una web app che permette all'utente di gestire una lista di attività.
 
-## 💻tecnologie utilizzate
+## tecnologie utilizzate
 
 - HTML (struttura pagina)
 - CSS (stile pagine)
 - JavaScript (funzioni dinamiche pagina)
 
-## ⚙️Funzionalità
+## Funzionalità
 
 - Aggiunta di nuovi task e ricerca
 - Eliminazione dei task
 - Visualizzazione dei task completati, in corso e da fare
 
 
-## 📁 Struttura del progetto
+## Struttura del progetto
 
 TaskManager/
 ├── index.html
 ├── style.css 
 ├── app.js
 
-## ✍️Autore
+## Autore
 Luciossss

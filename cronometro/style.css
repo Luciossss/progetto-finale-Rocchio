@@ -1,0 +1,76 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #555555;
+}
+
+.container {
+    text-align: center;
+    background-color: #f390f7;
+    padding: 20px;
+    border-radius: 20px; 
+   
+}
+
+#time-display {
+    font-size: 48px;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222; 
+    color: #fff; 
+    
+}
+
+button {
+    padding: 12px 24px; 
+    margin: 10px; 
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px; 
+    border: none; 
+    transition: background-color 0.3s ease; 
+}
+
+button#start-btn {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+button#stop-btn {
+    background-color: #f44336; 
+    color: white;
+}
+
+button#reset-btn {
+    background-color: #2196F3; 
+    color: white;
+}
+
+button#lap-btn {
+    background-color: #FF9800; 
+    color: white;
+}
+
+button:hover {
+    background-color: #555; 
+}
+
+#laps {
+    margin-top: 20px;
+}
+
+#lap-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#lap-list li {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
