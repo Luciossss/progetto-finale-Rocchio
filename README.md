@@ -24,5 +24,32 @@ TaskManager/
 ├── style.css 
 ├── app.js
 
+# esercizio 2: Cronometro
+
+Creare un cronometro digitale con pulsanti per avviare, fermare e resettare il conteggio del tempo.
+
+## tecnologie utilizzate
+
+- HTML (struttura pagina)
+- CSS (stile pagine)
+- JavaScript (funzioni dinamiche pagina)
+
+## Funzionalità
+
+- Start: Avvia il conteggio del tempo.
+- Stop: Ferma il conteggio senza azzerarlo.
+- Reset: Riporta il tempo a zero.
+- Giro: Registra il tempo corrente senza interrompere il cronometro.
+- Visualizzazione del tempo in **secondi e minuti**.
+
+
+## Struttura del progetto
+
+cronometro/
+├── index.html
+├── style.css 
+├── app.js
+
+
 ## Autore
 Luciossss
