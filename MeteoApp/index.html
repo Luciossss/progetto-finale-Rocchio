@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>METEO APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+    <body>
+        <div class="container">
+            <h1>App Meteo</h1>
+        
+            <div class="search">
+              <input type="text" id="cityInput" placeholder="Inserisci la città">
+              <button onclick="getWeatherFromCity()">🔍</button>
+            </div>
+        
+            <div id="weatherCard" class="weather-card">
+              <div id="weatherInfo">
+                <!-- Informazioni meteo qui -->
+              </div>
+              <div id="weatherIcon">
+                <!-- Icona meteo qui -->
+              </div>
+            </div>
+          </div>
+        
+          <script src="app.js"></script>
+            
+     </body>
+
+</html>
