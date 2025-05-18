@@ -52,6 +52,8 @@ function resetTimer() {
     updateDisplay();
     laps = [];
     lapList.innerHTML = '';
+   
+    
 }
 
 function recordLap() {
