@@ -61,3 +61,7 @@ function recordLap() {
     lapItem.textContent = lapTime;
     lapList.appendChild(lapItem);
 }
+
+
+
+

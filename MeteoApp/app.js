@@ -12,7 +12,7 @@ function getCoordinates() {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
   
-    fetchWeatherData({latitude, longitude});
+    fetchWeatherData(latitude, longitude);
   }
   
   // Funzione per ottenere il meteo da una città tramite nome
@@ -29,9 +29,8 @@ function getCoordinates() {
       .then(response => response.json())
       .then(data => {
         if (data.length > 0) {
-          const latitude = parseFloat(data.lat);
-          const longitude = parseFloat(data
-            .lon);
+          const latitude = parseFloat(data[0].lat);
+          const longitude = parseFloat(data[0].lon);
           fetchWeatherData(latitude, longitude);
         } else {
           alert('Città non trovata!');
