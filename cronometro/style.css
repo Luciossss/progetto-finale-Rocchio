@@ -1,77 +1,96 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
+body 
+{
+    font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #555555;
+    background: linear-gradient(135deg, #1e1e1e, #484848);
+    color: white;
 }
 
-.container {
+.container 
+{
     text-align: center;
-    background-color: #f390f7;
-    padding: 20px;
-    border-radius: 20px; 
-   
+    background: linear-gradient(135deg, #bb86fc, #6200ea);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
 }
 
-#time-display {
-    font-size: 48px;
+#time-display 
+{
+    font-size: 50px;
+    font-weight: bold;
     margin: 20px 0;
     padding: 20px;
     border-radius: 10px;
-    background-color: #222; 
-    color: #fff; 
-    
+    background-color: #222;
+    color: #fff;
+    text-shadow: 0px 0px 10px #fff;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.4);
 }
 
-button {
-    padding: 12px 24px; 
-    margin: 10px; 
+button 
+{
+    padding: 12px 24px;
+    margin: 10px;
     font-size: 18px;
     cursor: pointer;
-    border-radius: 10px; 
-    border: none; 
-    transition: background-color 0.3s ease; 
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-button#start-btn {
-    background-color: #4CAF50; 
+button#start-btn
+{
+    background: linear-gradient(135deg, #00ff6a, #007f3b);
     color: white;
 }
 
-button#stop-btn {
-    background-color: #f44336; 
+button#stop-btn
+{
+    background: linear-gradient(135deg, #ff4d4d, #a50000);
     color: white;
 }
 
-button#reset-btn {
-    background-color: #2196F3; 
+button#reset-btn
+{
+    background: linear-gradient(135deg, #2196F3, #0d47a1);
     color: white;
 }
 
-button#lap-btn {
-    background-color: #FF9800; 
+button#lap-btn
+{
+    background: linear-gradient(135deg, #ff9800, #b36400);
     color: white;
 }
 
-button:hover {
-    background-color: #555; 
+button:hover 
+{
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.5);
 }
 
-#laps {
+#laps 
+{
     margin-top: 20px;
 }
 
-#lap-list {
+#lap-list 
+{
     list-style-type: none;
     padding: 0;
 }
 
-#lap-list li {
+#lap-list li 
+{
     font-size: 16px;
     margin: 5px 0;
+    padding: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
 }
-
-

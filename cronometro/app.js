@@ -17,20 +17,25 @@ stopButton.addEventListener('click', stopTimer);
 resetButton.addEventListener('click', resetTimer);
 lapButton.addEventListener('click', recordLap);
 
-function updateDisplay() {
+function updateDisplay() 
+{
     timeDisplay.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(milliseconds).padStart(2, '0')}`;
 }
 
-function startTimer() {
+function startTimer()
+{
     if (isRunning) return;
     isRunning = true;
-    timer = setInterval(() => {
+    timer = setInterval(() =>
+    {
         milliseconds++;
-        if (milliseconds >= 100) {
+        if (milliseconds >= 100)
+        {
             milliseconds = 0;
             seconds++;
         }
-        if (seconds >= 60) {
+        if (seconds >= 60) 
+        {
             seconds = 0;
             minutes++;
         }
@@ -38,12 +43,14 @@ function startTimer() {
     }, 10);
 }
 
-function stopTimer() {
+function stopTimer()
+{
     isRunning = false;
     clearInterval(timer);
 }
 
-function resetTimer() {
+function resetTimer() 
+{
     isRunning = false;
     clearInterval(timer);
     minutes = 0;
@@ -56,7 +63,8 @@ function resetTimer() {
     
 }
 
-function recordLap() {
+function recordLap() 
+{
     const lapTime = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}:${String(milliseconds).padStart(2, '0')}`;
     laps.push(lapTime);
     const lapItem = document.createElement('li');

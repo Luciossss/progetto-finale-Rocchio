@@ -1,67 +1,93 @@
-body {
-    font-family:'Times New Roman', Times, serif;
-    background-color: #646363;
-    margin: 10;
-    padding: 20px;
-  }
-  
-  .container {
+
+body 
+{
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    background: linear-gradient(135deg, #4a4a4b, #2d2273);
+    margin: 10px;
+    padding: 30px;;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.container
+{
     max-width: 700px;
     margin: auto;
-    background-color: #50d0f7;
-    padding: 20px;
-    border: 2px solid black;
-  }
-  
-  h1 {
+    background: linear-gradient(135deg, #0a0128, #381688);
+    border: 2px solid #070707;
+    border-radius: 12px;
     text-align: center;
-    color: #0c0c0c;
-  }
-  
-  .task-form,
-  .filters {
+    align-items: center;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    padding: 20px;
+    width: 100%;  
+}
+
+
+h1
+{
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    color: #F1F1F1;
+    margin-bottom: 20px;
+}
+
+
+.taskForm,
+.filters
+{
     display: flex;
     flex-wrap: wrap;
     gap: 5px;
     margin-bottom: 5px;
     flex-direction: column;
-  }
-  
-  .task-form input,
-  .task-form select,
-  .filters input,
-  .filters select {
-    flex: 1;
-    padding: 1px;
-  }
-  
-  button {
-   float: right;
-    padding: 5px 5px;
-    background-color: #09f320;
+    justify-content: center; 
+    align-items: center;
+    gap: 12px; 
+    width: 50%; 
+    max-width: 200px;
+}
+
+input, select
+{
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px; 
+}
+
+button
+{
+    padding: 12px 12px;
+    font-size: 14px;
     border: none;
     color: white;
     border-radius: 6px;
+    background-color: #2aa33c;
   }
   
+button:hover 
+{
+    scale: 1.07;
+    transition: background-color 0.3s ease;
+    background-color: #1f7a2b;
+}
 
-  
-  .task {
+.task
+{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
-    border: 1px solid #f1ebeb;
+    padding: 12px;
+    border: 1px solid #5E5E5E;
     margin-bottom: 8px;
-    border-radius: 6px;
-  }
-  
-  .task span {
-    flex: 1;
-  }
-  
-  .task.completed {
-    background-color: #e0ffe0;
-    text-decoration: line-through;
-    color: rgb(8, 8, 8);
-  }
+    border-radius: 12px;
+}
+
+

@@ -1,77 +1,96 @@
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #555555;
+body 
+{
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #1a1a1a, #2f4f8f);
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-  }
-  
-  .container {
+    color: white;
+}
+
+.container
+{
     text-align: center;
-    background-color:rgb(25, 76, 247);
+    background: linear-gradient(135deg, #3b8eea, #1f6dc3);
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     width: 100%;
     max-width: 400px;
-  }
-  
-  h1 {
+}
+
+h1
+{
     font-size: 2rem;
-    color: #0e0d0d;
-  }
-  
-  
-  .search {
+    color: white;
+}
+
+.search 
+{
+   .search {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    gap: 10px; 
     margin-bottom: 1.5rem;
-    
-  }
-  
-  #cityInput {
-    padding: 0.8rem;
-    width: 80%;
+}
+
+#cityInput 
+{
+    flex: 1; 
+    padding: 12px;
     font-size: 1rem;
-    border-radius: 5px;
-    border: 1px solid #0e0d0d;
-  }
-  
-  button {
-    padding: 0.8rem;
-    background-color: #0aa016;
-    color: rgb(10, 10, 10);
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    background-color: #f8f9fa;
+    color: #222;
+}
+
+button
+{
+    padding: 12px;
+    background: linear-gradient(135deg, #0aa016, #067d12);
+    color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 1rem;
-    display: table-row;
-  }
-  
-  button:hover {
-    background-color:rgb(71, 71, 71);
-  }
-  
- 
-.weather-card {
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+}
+
+button:hover
+{
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #067d12, #0aa016);
+}
+
+.weather-card
+{
     width: 100%;
-    max-width:350px;
-    margin: 0 auto;
+    max-width: 350px;
+    margin: 10px auto;
     padding: 20px;
-    border-radius: 10px;
-    background-color: rgb(25, 76, 247);
+    border-radius: 12px;
+    background: linear-gradient(135deg, #3b8eea, #1f6dc3);
     text-align: center;
     transition: background-color 0.3s ease-in-out;
-  }
-  
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
 
-  .weather-card h1 {
-    font-size: 10px;
-    color: #333;
-  }
-  
-  
-  #weatherInfo p {
-    font-size: 10px;
-    margin: 5px 0;
-  }
+.weather-card h1
+{
+    font-size: 1.5rem;
+    color: white;
+}
+
+#weatherInfo p 
+{
+    font-size: 1rem;
+    margin: 8px 0;
+    color: white;
+}

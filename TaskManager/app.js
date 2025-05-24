@@ -7,20 +7,23 @@ const filterStatus = document.getElementById('filterStatus');
 
 let tasks = [];
 
-function renderTasks() {
+function renderTasks()
+ {
   const searchTerm = searchInput.value.toLowerCase();
   const statusFilter = filterStatus.value;
 
   taskList.innerHTML = '';
 
   tasks
-    .filter(task => {
+    .filter(task =>
+      {
       return (
         (statusFilter === 'tutte' || task.status === statusFilter) &&
         task.name.toLowerCase().includes(searchTerm)
       );
     })
-    .forEach((task, index) => {
+    .forEach((task, index) =>
+      {
       const li = document.createElement('li');
      
       li.className = `task ${task.status === 'completata' ? 'completed' : ''}`;
@@ -28,14 +31,17 @@ function renderTasks() {
       const span = document.createElement('span');
       span.textContent = `${task.name} - [${task.status}]`;
 
-      if (task.status === 'da fare') {
-        li.style.backgroundColor = 'red'; 
+      if (task.status === 'da fare') 
+      {
+        li.style.backgroundColor = '#B22222'; 
         span.style.color = 'white'; 
-      } else if (task.status === 'in corso') {
-        li.style.backgroundColor = 'orange'; 
+      } else if (task.status === 'in corso')
+      {
+        li.style.backgroundColor = '#FFA500'; 
         span.style.color = 'white'; 
-      } else if (task.status === 'completata') {
-        li.style.backgroundColor = 'green'; 
+      } else if (task.status === 'completata')
+      {
+        li.style.backgroundColor = '#32CD32'; 
         span.style.color = 'white'; 
       }
 
@@ -62,7 +68,8 @@ function renderTasks() {
     });
 }
 
-function addTask() {
+function addTask() 
+{
   const name = taskNameInput.value.trim();
   const status = taskStatusInput.value;
 
@@ -73,20 +80,24 @@ function addTask() {
   renderTasks();
 }
 
-function deleteTask(index) {
+function deleteTask(index)
+{
   tasks.splice(index, 1);
   renderTasks();
 }
 
-function editTask(index) {
+function editTask(index)
+{
   const newName = prompt('Modifica nome attività:', tasks[index].name);
-  if (newName !== null && newName.trim() !== '') {
+  if (newName !== null && newName.trim() !== '')
+  {
     tasks[index].name = newName.trim();
     renderTasks();
   }
 }
 
-function toggleStatus(index) {
+function toggleStatus(index)
+{
   const states = ['da fare', 'in corso', 'completata'];
   const currentIndex = states.indexOf(tasks[index].status);
   tasks[index].status = states[(currentIndex + 1) % states.length];
@@ -98,4 +109,3 @@ searchInput.addEventListener('input', renderTasks);
 filterStatus.addEventListener('change', renderTasks);
 
 renderTasks(); 
-

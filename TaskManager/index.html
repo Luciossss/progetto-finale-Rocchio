@@ -10,7 +10,8 @@
 <body>
     <main class="container">
         <h1>Task Manager</h1>
-        <section class="taskForm">
+        
+          <section class="taskForm">
             <label for="taskName">Nome attività:</label>
             <input type="text" id="taskName" placeholder="inserisci attività">
             <label for="taskStatus">Stato:</label>
@@ -19,9 +20,13 @@
               <option value="in corso">In corso</option>
               <option value="completata">Completata</option>
             </select> 
-
-            <button id="addTaskBtn">Aggiungi attività</button>
-
+        
+        
+        
+          <button id="addTaskBtn">Aggiungi attività</button>
+        
+            
+ 
         </section>
         <section class="filters">
             <label for="searchInput">Cerca attività:</label>
@@ -35,13 +40,11 @@
               <option value="completata">Completata</option>
             </select>
           </section>
-        </div>
-
-        <ul id="taskList">
         
-        </ul>
-      </div>
- 
+          <div>
+            <ul id="taskList"></ul>
+          </div>
+
 
     </main>
     <script src="app.js"></script>
