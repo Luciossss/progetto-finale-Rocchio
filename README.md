@@ -20,9 +20,9 @@ Creare una web app che permette all'utente di gestire una lista di attività.
 ## Struttura del progetto
 
 TaskManager/
-├── index.html
-├── style.css 
-├── app.js
+- index.html
+- style.css
+- app.js
 
 -------------------------------------------------------------------------------------------------
 
@@ -48,9 +48,9 @@ Creare un cronometro digitale con pulsanti per avviare, fermare e resettare il c
 ## Struttura del progetto
 
 cronometro/
-├── index.html
-├── style.css 
-├── app.js
+- index.html
+- style.css 
+- app.js
 
 -------------------------------------------------------------------------------------------------
 
@@ -76,9 +76,9 @@ Creare un’app che tramite una chiamata API recupera le informazioni meteo rigu
 ## Struttura del progetto
 
 MeteoApp/
-├── index.html
-├── style.css 
-├── app.js
+- index.html
+- style.css
+- app.js
 
 ## API utilzzate
 URL: https://api.open-meteo.com/ 
